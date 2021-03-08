@@ -1,0 +1,35 @@
+{
+  "name": "express-static-precompress",
+  "version": "1.0.0",
+  "description": "provide compress for static file before server running",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangky01/express-static-precompress.git"
+  },
+  "homepage": "https://github.com/zhangky01/express-static-precompress",
+  "keywords": [
+    "express",
+    "compress",
+    "middleware",
+    "api",
+    "gzip"
+  ],
+  "author": {
+    "name": "KaiYang Zhang",
+    "email": "iszhangky@163.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mime": "^1.6.0"
+  },
+  "files": [
+    "LICENSE",
+    "Readme.md",
+    "index.js",
+    "lib/"
+  ]
+}
