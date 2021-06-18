@@ -1,6 +1,6 @@
 const util = require('./lib/util');
 const compress = require('./lib/compress');
-const mime = require('mime');
+const path = require('path');
 
 module.exports = precompress;
 
@@ -113,11 +113,9 @@ function checkReqHeaders(req) {
 }
 
 function setResponseHeaders(req, res) {
-    const contentType = mime.lookup(req.path);
-    const charset = mime.charsets.lookup(contentType);
     res.setHeader('Vary', 'Accept-Encoding');
     res.setHeader('Content-Encoding', 'gzip');
-    res.setHeader('Content-Type', contentType + (charset ? `; charset=${charset}` : ''));
+    res.type(path.extname(req.path));
 }
 
 /**

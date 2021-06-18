@@ -1,6 +1,6 @@
 {
   "name": "express-static-precompress",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "provide compress for static file before server running",
   "main": "index.js",
   "scripts": {
@@ -23,13 +23,13 @@
     "email": "iszhangky@163.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "mime": "^1.6.0"
-  },
   "files": [
     "LICENSE",
     "Readme.md",
     "index.js",
     "lib/"
-  ]
+  ],
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
 }
